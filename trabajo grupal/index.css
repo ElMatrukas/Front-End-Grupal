@@ -22,3 +22,78 @@ div {
   width: 380px;
   height: 200px;
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-bottom: 2px solid #FFA500;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    margin: 0;
+    height: 100px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFA500; /* Color naranja */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin: 0 15px;
+    cursor: pointer;
+    padding: 10px 15px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s, color 0.3s; /* Transiciones suaves */
+}
+
+.nav-item:hover {
+    background-color: #FFA500; /* Color de fondo al pasar el mouse */
+    color: #ffffff; /* Color del texto al pasar el mouse */
+}
+.search-button {
+    background: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.search-button svg {
+    width: 20px; /* Ajusta el tamaño del SVG */
+    height: 20px; /* Ajusta el tamaño del SVG */
+    fill: #ffffff; /* Color del ícono */
+    transition: fill 0.3s; /* Transición suave para el color */
+}
+.search-button:hover svg {
+    fill: #FFA500; /* Cambia el color al pasar el mouse */
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+}
+
+.user-avatar {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-name {
+    font-size: 16px;
+}

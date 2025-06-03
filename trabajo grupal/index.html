@@ -12,18 +12,23 @@
         Insta Gaming
         </div>
         <nav aria-label="Navegación primaria">
-        <ul>
-            <li>Inicio</li>
-            <li>Juegos</li>
-            <li>Torneos</li>
-            <li>Comunidad</li>
-            <li>Tienda</li>
-        </ul>
-        <button class="search-button" aria-label="Abrir buscador" title="Buscar">🔍</button>
+        <ul class="nav-list">
+            <li class="nav-item">Inicio</li>
+            <li class="nav-item">Juegos</li>
+            <li class="nav-item">Torneos</li>
+            <li class="nav-item">Comunidad</li>
+            <li class="nav-item">Tienda</li>
+        </ul>    
         </nav>
+        <button class="search-button" aria-label="Abrir buscador" title="Buscar">               
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <circle cx="7" cy="7" r="6" stroke="white" stroke-width="1.5" fill="none"/>
+                    <line x1="10.5" y1="10.5" x2="15" y2="15" stroke="white" stroke-width="1.5"/>
+                </svg>
+        </button>
         <div class="user-profile" aria-label="Menú de perfil de usuario">
-        <img src="https://i.pravatar.cc/36" alt="Avatar del usuario" />
-        <span>Perfil</span>
+        <img class="user-avatar" src="https://i.pravatar.cc/36" alt="Avatar del usuario" />
+        <span class="user-name">Perfil</span>
         </div>
     </header>
 
