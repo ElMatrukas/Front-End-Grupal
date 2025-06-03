@@ -1,0 +1,24 @@
+* {
+  font-family: "Segoe UI", sans-serif;
+}
+body {
+  background-color: rgb(46, 46, 46);
+}
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+span {
+  color: rgb(255, 255, 255);
+}
+div {
+  color: rgb(255, 255, 255);
+}
+.listing-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+.picture {
+  width: 380px;
+  height: 200px;
+}
