@@ -1,8 +1,14 @@
 * {
   font-family: "Segoe UI", sans-serif;
 }
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
 body {
   background-color: rgb(46, 46, 46);
+  margin-top: 0;
 }
 a {
   text-decoration: none;
@@ -56,14 +62,26 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 30px 20px;
     background-color: #1e1e1e;
     border-bottom: 2px solid #FFA500;
     font-family: 'Arial', sans-serif;
     color: #ffffff;
     margin: 0;
+    height: 70px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+header:is(:not(:root)) {
+    padding: 10px 20px;
     height: 50px;
 }
+
 
 .logo {
     font-size: 24px;
@@ -102,6 +120,7 @@ nav {
     cursor: pointer;
     display: flex;
     align-items: center;
+    margin-right: 2px;
 }
 .search-button svg {
     width: 20px; /* Ajusta el tamaño del SVG */
@@ -115,16 +134,16 @@ nav {
 
 .user-profile {
     display: flex;
+    flex-direction: row;
     align-items: center;
 }
-
 .user-avatar {
     border-radius: 50%;
-    margin-right: 10px;
+    margin-right: 8px;
+    margin-bottom: 0;
 }
-
 .user-name {
-    font-size: 16px;
+    font-size: 12px;
 }
 .footer {
 display: flex;
