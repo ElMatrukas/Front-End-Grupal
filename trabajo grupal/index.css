@@ -95,7 +95,7 @@ header:is(:not(:root)) {
         margin-left: 0;
     }
     .user-profile {
-        margin-right: px;
+        margin-left: 0;
     }
 }
 
