@@ -183,6 +183,84 @@ nav {
     font-size: 14px;
     
 }
+/*Fabian: Más vendido, ultimas reseñas y ofertas de la semana:*/
+.mas-vendido {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border: #1e1e1e solid 2px;
+
+}
+.carduno{
+  border: 10px solid #1e1e1e;
+}
+.assa-img{
+  width: 300px;
+  height: 300px;
+}
+.carddos{
+  border: 10px solid #1e1e1e;
+}
+.metro-img{
+  width: 310px;
+  height: 300px;
+}
+.cardtres{
+  border: 10px solid #1e1e1e;
+}
+
+/*reseñas*/
+.titulos{
+  border: #1e1e1e solid 2px;
+  padding: 10px;
+}
+.resenas{
+  display: flex;
+  justify-content: space-around;
+    border: #1e1e1e solid 2px;
+}
+.resenaitem{
+  background-color: #4d4d4d;
+  flex-wrap: wrap;
+  border: #1e1e1e solid 10px;
+  border-radius: 20px;
+}
+.game-img{
+  border-radius: 20px 20px 0px 0px;
+  width: 400px;
+  height: 250px;
+}
+.icon-user{
+  width: 50px;
+}
+.icon-mg{
+  width: 50px;
+}
+
+/*ofertas*/
+.ofertaitem{
+  
+}
+.preciotres{
+  color: #ff8800;
+  font-size: 20px;
+  font-weight: bold;
+}
+.precioviejo{
+  text-decoration: line-through;
+  color: #5f5f5f;
+}
+.oferta-img{
+  width: 400px;
+  height: 250px;
+  border-radius: 20px;
+}
+.ofertas-semana{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 .footer {
   display: flex;
   gap: 30px;
