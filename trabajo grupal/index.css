@@ -218,13 +218,29 @@ nav {
 .resenas{
   display: flex;
   justify-content: space-around;
-    border: #1e1e1e solid 2px;
+  border: #1e1e1e solid 2px;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-color: rgb(46, 46, 46) rgb(46, 46, 46);
+}
+.resenas::-webkit-scrollbar {
+  height: 8px;
+}
+.resenas::-webkit-scrollbar-track {
+  background: rgb(46, 46, 46);
+}
+.resenas::-webkit-scrollbar-thumb {
+  background: rgb(46, 46, 46);
+  border-radius: 4px;
 }
 .resenaitem{
   background-color: #4d4d4d;
   flex-wrap: wrap;
   border: #1e1e1e solid 10px;
   border-radius: 20px;
+  flex: 0 0 auto;
+  margin-right: 10px;
 }
 .game-img{
   border-radius: 20px 20px 0px 0px;
