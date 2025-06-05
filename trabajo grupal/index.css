@@ -20,26 +20,70 @@ span {
 div {
   color: rgb(255, 255, 255);
 }
+.item.banner-similar {
+  position: relative; /* Necesario para posicionar el descuento dentro de este contenedor */
+  display: inline-block;
+}
 .listing-items {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 20px;
+}
+.item {
+  position: relative;
+  display: inline-block;
+  border-radius: 12px;
+  overflow: hidden;
 }
 .picture {
+  display: block;
   width: 380px;
   height: 200px;
+  border-radius: 12px;
+}
+.discount {
+  position: absolute;
+  bottom: 40px;
+  left: 0px;
+  background-color: #ff5c00; /* Naranja fuerte */
+  color: white;
+  padding: 4px 10px;
+  border-radius: 6px 12px 6px 6px; /* esquina superior derecha más redondeada */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+.information {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.price {
+  position: relative;
+  bottom: 7px;
+  font-size: 25px;
 }
 /*icono flecha*/
+
 .material-symbols-outlined {
   color: rgb(161, 161, 161);
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
+  position: relative;
+  top: 3px;
+  font-variation-settings: "FILL" 0, "wght" 500, "GRAD" 0, "opsz" 24;
 }
-.headline{
-    display: flex;
-    flex-wrap: nowrap;
+.title-more {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.headline {
+  padding-left: 250px; /* O usá 32px, 40px... según lo que necesites */
+}
+
+.title-more h2 {
+  margin: 10;
 }
 .material-symbols-outlined:hover {
   color: rgb(255, 255, 255);
@@ -56,6 +100,125 @@ div {
 }
 .material-symbols-outlined:focus-within {
   color: rgb(4, 4, 4);
+}
+/* Estilo general del panel */
+.trust-panel {
+  background-color: #121212; /* Fondo oscuro */
+  padding: 30px 0;
+  color: white;
+  font-family: "Barlow", sans-serif;
+}
+
+/* Contenedor de los ítems en fila */
+.trust-panel .content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+/* Cada ítem con ícono y texto */
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Icono */
+.feature img {
+  width: 28px;
+  height: 28px;
+  filter: brightness(1.1) saturate(1.2);
+}
+
+/* Texto del ítem */
+.text .maintext {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.text .subtext {
+  font-size: 13px;
+  color: #aaa;
+  margin-top: 2px;
+}
+
+/* Separadores verticales */
+.trust-panel hr {
+  height: 48px;
+  border: none;
+  border-left: 1px solid #333;
+  margin: 0 20px;
+}
+
+/*Tarjetas de opiniones*/
+.opiniones {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #1f1f1f;
+  padding: 30px;
+}
+
+.opinion-card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  background-color: #2b2b2b;
+  padding: 16px;
+  border-radius: 12px;
+  width: 260px;
+  color: white;
+  font-family: "Barlow", sans-serif;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 12px;
+}
+
+.info {
+  flex: 1;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.stars {
+  color: gold;
+  font-size: 14px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 140px;
+}
+
+.mensaje {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 6px;
+}
+
+.fecha {
+  font-size: 12px;
+  color: #aaa;
+  font-weight: 600;
 }
 
 header {
